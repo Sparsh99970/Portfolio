@@ -3,6 +3,7 @@ import WheelWingsImg from '../assets/WheelWings.png'
 import SkyBotImg from '../assets/SkyBot.png'
 import MovieManiaImg from '../assets/FAke.png'
 import CipherCert from '../assets/Cipher.png'
+import GroupPic from '../assets/Grouppic.jpeg'
 
 function Projects() {
   const ref = useScrollAnimation()
@@ -51,7 +52,8 @@ function Projects() {
         "Solved 300+ coding problems on platforms like LeetCode and GeeksforGeeks",
         "Strengthened analytical and problem-solving skills through coding challenges"
       ],
-      certificate: CipherCert
+      certificate: CipherCert,
+      groupPic: GroupPic
     }
   ]
 
@@ -149,19 +151,34 @@ function Projects() {
                   </ul>
                 </div>
                 
-                {training.certificate && (
-                  <div className="training-certificate">
-                    <p className="certificate-label">Certificate of Completion</p>
-                    <img 
-                      src={training.certificate} 
-                      alt={`${training.title} Certificate`}
-                      className="certificate-image"
-                      onClick={() => handleCertificateClick(training.certificate)}
-                      style={{ cursor: 'pointer' }}
-                      title="Click to view full certificate"
-                    />
-                  </div>
-                )}
+                <div className="training-media">
+                  {training.groupPic && (
+                    <div className="training-group-pic">
+                      <p className="media-label">Training Group Photo</p>
+                      <img 
+                        src={training.groupPic} 
+                        alt={`${training.title} Group Photo`}
+                        className="group-pic-image"
+                        onClick={() => handleCertificateClick(training.groupPic)}
+                        style={{ cursor: 'pointer' }}
+                        title="Click to view full image"
+                      />
+                    </div>
+                  )}
+                  {training.certificate && (
+                    <div className="training-certificate">
+                      <p className="media-label">Certificate of Completion</p>
+                      <img 
+                        src={training.certificate} 
+                        alt={`${training.title} Certificate`}
+                        className="certificate-image"
+                        onClick={() => handleCertificateClick(training.certificate)}
+                        style={{ cursor: 'pointer' }}
+                        title="Click to view full certificate"
+                      />
+                    </div>
+                  )}
+                </div>
               </div>
             ))}
           </div>

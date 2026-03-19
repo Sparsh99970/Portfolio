@@ -1419,6 +1419,60 @@ body.dark-theme-body {
   box-shadow: 0 8px 25px rgba(30, 58, 138, 0.3);
 }
 
+/* Training Media Container */
+.training-media {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.training-group-pic,
+.training-certificate {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(30, 58, 138, 0.06);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.training-group-pic:hover,
+.training-certificate:hover {
+  background: rgba(30, 58, 138, 0.1);
+  transform: translateY(-4px);
+}
+
+.media-label {
+  color: var(--secondary);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.group-pic-image {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(30, 58, 138, 0.2);
+  transition: all 0.3s ease;
+  border: 2px solid var(--secondary);
+}
+
+.group-pic-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(30, 58, 138, 0.3);
+}
+
+/* Responsive: Stack on mobile */
+@media (max-width: 768px) {
+  .training-media {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ACHIEVEMENTS SECTION */
 .achievements {
   padding: 5rem 2rem;
