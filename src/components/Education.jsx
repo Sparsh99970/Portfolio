@@ -8,27 +8,27 @@ function Education() {
       degree: "B.Tech Computer Science Engineering",
       school: "Lovely Professional University",
       duration: "Aug 2023 - Present",
-      gpa: "CGPA: 7.7",
-      location: "Punjab, India",
+      gpa: "CGPA: 8.84",
+      location: "Phagwara, Punjab, India",
       description: "Strong foundation in Data Structures, Algorithms, and modern web technologies"
     },
     {
       id: 2,
       degree: "Intermediate (12th Grade)",
-      school: "Sunshine Residential Public School",
-      duration: "Apr 2021 - Mar 2022",
-      percentage: "74%",
-      location: "Bihar, India",
-      description: "Focused on Science and Mathematics"
+      school: "Air Force School",
+      duration: "Apr 2022 - Mar 2023",
+      percentage: "82%",
+      location: "Agra, Uttar Pradesh, India",
+      description: "Focused on Science and Mathematics with strong academic performance"
     },
     {
       id: 3,
-      degree: "Matriculation (10th Grade)",
-      school: "Manav Bharti National School",
-      duration: "Apr 2019 - Mar 2020",
-      percentage: "86.40%",
-      location: "Bihar, India",
-      description: "Strong academic performance with excellence in STEM subjects"
+      degree: "Intermediate (12th Grade)",
+      school: "Air Force School",
+      duration: "Apr 2020 - Mar 2021",
+      percentage: "81%",
+      location: "Agra, Uttar Pradesh, India",
+      description: "Excellent performance in STEM subjects and overall academics"
     }
   ]
 

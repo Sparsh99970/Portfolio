@@ -12,14 +12,14 @@ function Skills() {
 
   const getIconForCategory = (title) => {
     switch(title) {
-      case "Programming":
+      case "Programming Languages":
         return (
           <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <polyline points="16 18 22 12 16 6"></polyline>
             <polyline points="8 6 2 12 8 18"></polyline>
           </svg>
         )
-      case "Frontend":
+      case "Frontend Technologies":
         return (
           <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
@@ -27,7 +27,7 @@ function Skills() {
             <line x1="12" y1="17" x2="12" y2="21"></line>
           </svg>
         )
-      case "Backend":
+      case "Backend & Databases":
         return (
           <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
@@ -37,7 +37,15 @@ function Skills() {
             <line x1="2" y1="17" x2="22" y2="17"></line>
           </svg>
         )
-      case "Tools & Platforms":
+      case "Data Science & ML":
+        return (
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M3 3v18a1 1 0 0 0 1 1h16"></path>
+            <path d="M7 12l4-5 4 5 5-7"></path>
+            <circle cx="20" cy="6" r="1"></circle>
+          </svg>
+        )
+      case "Version Control & Tools":
         return (
           <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 1 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
@@ -59,48 +67,63 @@ function Skills() {
 
   const skillCategories = [
     {
-      title: "Programming",
+      title: "Programming Languages",
       color: "from-blue-500 to-cyan-500",
       skills: [
-        { name: "C++", percentage: 85 },
+        { name: "Python", percentage: 85 },
         { name: "JavaScript", percentage: 88 },
-        { name: "Python", percentage: 80 }
+        { name: "Java", percentage: 82 },
+        { name: "C++", percentage: 80 }
       ]
     },
     {
-      title: "Frontend",
+      title: "Frontend Technologies",
       color: "from-purple-500 to-pink-500",
       skills: [
-        { name: "React.js", percentage: 85 },
-        { name: "HTML5", percentage: 90 },
-        { name: "CSS3", percentage: 90 }
+        { name: "React.js", percentage: 88 },
+        { name: "HTML5", percentage: 92 },
+        { name: "CSS3", percentage: 90 },
+        { name: "Tailwind CSS", percentage: 85 }
       ]
     },
     {
-      title: "Backend",
+      title: "Backend & Databases",
       color: "from-emerald-500 to-teal-500",
       skills: [
-        { name: "Node.js", percentage: 80 },
-        { name: "MongoDB", percentage: 82 },
-        { name: "MySQL", percentage: 78 }
+        { name: "Node.js", percentage: 82 },
+        { name: "MongoDB", percentage: 80 },
+        { name: "MySQL", percentage: 80 },
+        { name: "Express.js", percentage: 80 }
       ]
     },
     {
-      title: "Tools & Platforms",
+      title: "Data Science & ML",
+      color: "from-rose-500 to-orange-500",
+      skills: [
+        { name: "Pandas", percentage: 85 },
+        { name: "NumPy", percentage: 83 },
+        { name: "Scikit-learn", percentage: 82 },
+        { name: "Matplotlib", percentage: 80 }
+      ]
+    },
+    {
+      title: "Version Control & Tools",
       color: "from-orange-500 to-red-500",
       skills: [
-        { name: "Git/GitHub", percentage: 85 },
-        { name: "Vite", percentage: 82 },
-        { name: "VS Code", percentage: 90 }
+        { name: "Git", percentage: 88 },
+        { name: "GitHub", percentage: 88 },
+        { name: "VS Code", percentage: 92 },
+        { name: "Jupyter Notebook", percentage: 85 }
       ]
     },
     {
       title: "Soft Skills",
       color: "from-indigo-500 to-blue-500",
       skills: [
-        { name: "Problem Solving", percentage: 88 },
-        { name: "Communication", percentage: 85 },
-        { name: "Teamwork", percentage: 87 }
+        { name: "Problem Solving", percentage: 90 },
+        { name: "Collaboration", percentage: 87 },
+        { name: "Analytical Thinking", percentage: 88 },
+        { name: "Communication", percentage: 85 }
       ]
     }
   ]

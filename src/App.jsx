@@ -6,7 +6,6 @@ import About from './components/About'
 import Skills from './components/Skills'
 import Education from './components/Education'
 import Projects from './components/Projects'
-import Services from './components/Services'
 import Achievements from './components/Achievements'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
@@ -45,8 +44,8 @@ function App() {
 
   const downloadCV = () => {
     const link = document.createElement('a')
-    link.href = '/MockInterviewCV.pdf'
-    link.download = 'Aman_Verma_CV.pdf'
+    link.href = '/Sparsh_Sharma_CV.pdf'
+    link.download = 'Sparsh_Sharma_CV.pdf'
     link.click()
   }
 
@@ -68,7 +67,6 @@ function App() {
       <Skills />
       <Education />
       <Projects />
-      <Services />
       <Achievements />
       <Contact />
       <Footer />

@@ -365,12 +365,14 @@ body.dark-theme-body {
 .portfolio.dark-theme .about,
 .portfolio.dark-theme .education,
 .portfolio.dark-theme .projects,
+.portfolio.dark-theme .training,
 .portfolio.dark-theme .achievements,
 .portfolio.dark-theme .skills,
 .portfolio.dark-theme .services,
 .portfolio.dark-theme .contact,
 .portfolio.dark-theme .skill-category,
 .portfolio.dark-theme .project-card,
+.portfolio.dark-theme .training-card,
 .portfolio.dark-theme .service-card,
 .portfolio.dark-theme .contact-form,
 .portfolio.dark-theme .contact-method,
@@ -389,6 +391,7 @@ body.dark-theme-body {
 .portfolio.dark-theme .tech-tag,
 .portfolio.dark-theme .skill-tags span,
 .portfolio.dark-theme .project-features,
+.portfolio.dark-theme .training-highlights,
 .portfolio.dark-theme .skill-percentage,
 .portfolio.dark-theme .education-score {
   background: rgba(56, 189, 248, 0.12);
@@ -491,6 +494,48 @@ body.dark-theme-body {
 .about-box p {
   color: var(--text-light);
   line-height: 1.7;
+}
+
+.about-location {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--secondary);
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.about-location svg {
+  color: var(--accent);
+}
+
+.about-social-links {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(30, 58, 138, 0.25);
+  text-decoration: none;
+  color: white;
 }
 
 /* SKILLS SECTION */
@@ -1034,6 +1079,96 @@ body.dark-theme-body {
   transform: translateY(-2px);
 }
 
+/* Skills Demonstrated */
+.skills-demonstrated {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: rgba(14, 165, 233, 0.05);
+  border-radius: 8px;
+  border-left: 3px solid var(--secondary);
+}
+
+.skills-demonstrated h4 {
+  color: var(--primary);
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.skills-demo-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-demo-tag {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1));
+  color: var(--primary);
+  padding: 0.35rem 0.85rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  transition: all 0.3s ease;
+}
+
+.skill-demo-tag:hover {
+  background: rgba(59, 130, 246, 0.15);
+  border-color: var(--primary);
+  transform: translateY(-1px);
+}
+
+/* Project Tech Heading */
+.project-tech h4 {
+  color: var(--primary);
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Soft Skills Section */
+.soft-skills-list,
+.activities-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.soft-skill-item,
+.activity-item {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border);
+  padding: 1.2rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.soft-skill-item:hover,
+.activity-item:hover {
+  border-color: var(--secondary);
+  box-shadow: 0 4px 12px rgba(14, 165, 233, 0.1);
+  transform: translateY(-2px);
+}
+
+.soft-skill-item h4,
+.activity-item h4 {
+  color: var(--primary);
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+  font-weight: 700;
+}
+
+.soft-skill-item p,
+.activity-item p {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
 .project-link {
   display: inline-block;
   background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
@@ -1135,6 +1270,153 @@ body.dark-theme-body {
   color: var(--text-light);
   line-height: 1.7;
   font-size: 0.95rem;
+}
+
+/* TRAINING SECTION */
+.training {
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, rgba(30, 58, 138, 0.05), rgba(14, 165, 233, 0.05));
+  margin: 2rem;
+  border-radius: 20px;
+}
+
+.training-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.training-card {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border-left: 5px solid var(--secondary);
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.training-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 50px rgba(30, 58, 138, 0.15);
+  border-left-color: var(--accent);
+}
+
+.training-header {
+  margin-bottom: 1.2rem;
+}
+
+.training-title {
+  color: var(--dark);
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.training-provider {
+  color: var(--secondary);
+  font-weight: 700;
+  font-size: 0.9rem;
+  display: inline-block;
+  background: rgba(14, 165, 233, 0.1);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+}
+
+.training-duration {
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.training-duration svg {
+  width: 14px;
+  height: 14px;
+  color: var(--accent);
+}
+
+.training-description {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.training-highlights {
+  background: rgba(30, 58, 138, 0.04);
+  border-radius: 8px;
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+.training-highlights h4 {
+  color: var(--dark);
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+  margin-top: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.training-highlights ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.training-highlights li {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  padding-left: 0;
+  position: relative;
+  line-height: 1.5;
+}
+
+.training-highlights li::before {
+  content: '→';
+  color: var(--secondary);
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.training-certificate {
+  margin-top: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+  background: rgba(30, 58, 138, 0.06);
+  border-radius: 10px;
+}
+
+.certificate-label {
+  color: var(--secondary);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.certificate-image {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(30, 58, 138, 0.2);
+  transition: all 0.3s ease;
+  border: 2px solid var(--secondary);
+}
+
+.certificate-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(30, 58, 138, 0.3);
 }
 
 /* ACHIEVEMENTS SECTION */

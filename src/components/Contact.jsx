@@ -45,43 +45,43 @@ function Contact() {
             <p>I'm always open to new opportunities, collaborations, and interesting projects. Feel free to contact me anytime!</p>
             
             <div className="contact-methods">
-              <a href="mailto:amanverma130604@gmail.com" className="contact-method">
+              <a href="mailto:sparshss143341@gmail.com" className="contact-method">
                 <div className="contact-icon">
                   <Mail />
                 </div>
                 <div>
                   <p className="contact-label">Email</p>
-                  <p className="contact-value">amanverma130604@gmail.com</p>
+                  <p className="contact-value">sparshss143341@gmail.com</p>
                 </div>
               </a>
               
-              <a href="tel:+919523878059" className="contact-method">
+              <a href="tel:+919997041324" className="contact-method">
                 <div className="contact-icon">
                   <Phone />
                 </div>
                 <div>
                   <p className="contact-label">Phone</p>
-                  <p className="contact-value">+91-9523878059</p>
+                  <p className="contact-value">+91-9997041324</p>
                 </div>
               </a>
               
-              <a href="https://www.linkedin.com/in/aman-0w12" target="_blank" rel="noopener noreferrer" className="contact-method">
+              <a href="https://linkedin.com/in/sparshss" target="_blank" rel="noopener noreferrer" className="contact-method">
                 <div className="contact-icon">
                   <Linkedin />
                 </div>
                 <div>
                   <p className="contact-label">LinkedIn</p>
-                  <p className="contact-value">linkedin.com/in/aman-0w12</p>
+                  <p className="contact-value">linkedin.com/in/sparshss</p>
                 </div>
               </a>
               
-              <a href="https://github.com/aman130604" target="_blank" rel="noopener noreferrer" className="contact-method">
+              <a href="https://github.com/Sparsh99970" target="_blank" rel="noopener noreferrer" className="contact-method">
                 <div className="contact-icon">
                   <Github />
                 </div>
                 <div>
                   <p className="contact-label">GitHub</p>
-                  <p className="contact-value">github.com/aman130604</p>
+                  <p className="contact-value">github.com/Sparsh99970</p>
                 </div>
               </a>
             </div>
