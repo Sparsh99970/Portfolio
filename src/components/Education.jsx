@@ -23,9 +23,9 @@ function Education() {
     },
     {
       id: 3,
-      degree: "Intermediate (12th Grade)",
+      degree: "Intermediate (10th Grade)",
       school: "Air Force School",
-      duration: "Apr 2020 - Mar 2021",
+      duration: "Apr 2021 - Mar 2022",
       percentage: "81%",
       location: "Agra, Uttar Pradesh, India",
       description: "Excellent performance in STEM subjects and overall academics"
